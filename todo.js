@@ -4,6 +4,7 @@ const todo = [
   { title: "Make a simple project", done: true },
   { title: "Understanding the array", done: false },
 ];
+
 let completedTask = [];
 let ongoingTask = [];
 
@@ -15,12 +16,14 @@ todo.forEach((todoitem) => {
   }
 });
 
-console.log("✅ Completed Tasks");
+console.log("\n✅ Completed Tasks");
+
 completedTask.forEach((task) => {
-  console.log(`- ${task.title}`);
+  console.log(`   - ${task.title}`);
 });
 
 console.log("\n🕐 Ongoing Tasks");
+
 ongoingTask.forEach((task) => {
-  console.log(`- ${task.title}`);
+  console.log(`   - ${task.title}`);
 });
